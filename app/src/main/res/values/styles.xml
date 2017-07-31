@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ControllerStyle">
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="BottomControlStyle">
+        <item name="android:tint">@color/lightTint</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">cursive</item>
+    </style>
+
+    <style name="ListItemText">
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/list_text_size</item>
+    </style>
+
+    <dimen name="title_text_size">28sp</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+</resources>

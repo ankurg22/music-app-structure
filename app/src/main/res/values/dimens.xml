@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="playing_text_size">20sp</dimen>
+    <dimen name="card_radius">20dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="control_width">250dp</dimen>
+    <dimen name="bottom_control_dimen">24dp</dimen>
+    <dimen name="volume_control_dimen">16dp</dimen>
+    <dimen name="contoller_width">20dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="list_item_width">52dp</dimen>
+    <dimen name="list_content_padding">16dp</dimen>
+    <dimen name="grid_item_dimen">90dp</dimen>
+    <dimen name="payment_heading">28sp</dimen>
+    <dimen name="payment_content">18sp</dimen>
+    <dimen name="dev_image_dimen">150dp</dimen>
+</resources>

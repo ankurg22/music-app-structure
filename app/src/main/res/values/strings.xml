@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Musilicious</string>
+
+    <string name="main_activity_description">This screen displays all songs and albums. All songs and albums are clickable. Also there is 3-dot menu on top right corner for other actions. I have used support desgn library and data binding library heavily in this app. </string>
+    <string name="menu">Menu</string>
+    <string name="repeat">Repeat</string>
+    <string name="play">Play</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="favorite">Added to favorites</string>
+    <string name="playlist">Playlist</string>
+    <string name="process">Payment Process</string>
+    <string name="buy">Buy subscription</string>
+    <string name="about">About</string>
+
+    <string name="step1">1. I will use Android Pay API to process payments.</string>
+    <string name="step2">2. For this I will first add dependency in project\'s build.gradle file.</string>
+    <string name="step3">3. Modification in manifest file is also needed for this api.</string>
+    <string name="step4">4. When the user clicks on Buy button first thing the app will check is if the user have Android Pay app installed.</string>
+    <string name="step5">5. If the app is installed, request a payment token. There are two types of token network token and payment gateway token.</string>
+    <string name="step6">6. Now to request wallet information I will create Masked Wallet Request.</string>
+    <string name="step7">7. WalletFragment is also needed to be added to automate the process of purchasing.</string>
+    <string name="step8">8. When user tap on Buy with Android Pay in the Wallet fragment a intent will start and result will be catched in onActivityResult() callback.</string>
+    <string name="step9">9. From that result we can determine whether the transaction was successful or not.</string>
+    <string name="about_desc">This activity is to list the developer info, app info like open source library used, current version. Also email id to report any bugs or provide feedback</string>
+    <string name="developed_by">Developed by : Ankur Gupta</string>
+    <string name="email">Contact</string>
+    <string name="github">Github</string>
+    <string name="credits">All icons used in PlayingActivity are OpenSource and taken from <a href="romannurik.github.io/AndroidAssetStudio/"><b><u>this site</u></b></a></string>
+    <string name="id">guptaankur.gupta0@gmail.com</string>
+    <string name="subject">Musilicious support</string>
+    <string name="github_address">https://github.com/ankurg22/</string>
+    <string name="playing">Now Playing</string>
+    <string name="ok">OK</string>
+    <string name="play_title">Description</string>
+    <string name="play_desc">This screen might use MediaPlayer, AudioManager, MediaSessionCompat, MediaButtonReciever, PlaybackStateCompat, NotificationCompat, MediaControllerCompat, MediaBrowserService</string>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="song"
+            type="com.example.android.musilicious.Song" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF84F"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_padding"
+        tools:context="com.example.android.musilicious.PlayingActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/playing"
+                android:textSize="@dimen/playing_text_size" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{song.title}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@{song.artist}"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="@dimen/card_elevation"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@{song.imageId}" />
+        </android.support.v7.widget.CardView>
+
+        <SeekBar
+            android:layout_width="@dimen/control_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="@dimen/control_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/repeat"
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/contoller_width"
+                android:layout_weight="1"
+                android:src="@drawable/repeat" />
+
+            <ImageView
+                android:id="@+id/previous"
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/contoller_width"
+                android:layout_weight="1"
+                android:src="@drawable/previous" />
+
+            <ImageView
+                android:id="@+id/play"
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/zero"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/next"
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/contoller_width"
+                android:layout_weight="1"
+                android:src="@drawable/next" />
+
+            <ImageView
+                android:id="@+id/shuffle"
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/contoller_width"
+                android:layout_weight="1"
+                android:src="@drawable/shuffle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/control_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/ControllerStyle"
+                android:layout_width="@dimen/volume_control_dimen"
+                android:layout_height="@dimen/volume_control_dimen"
+                android:src="@drawable/volume" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home"
+                style="@style/BottomControlStyle"
+                android:layout_width="@dimen/bottom_control_dimen"
+                android:layout_height="@dimen/bottom_control_dimen"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/favorite"
+                style="@style/BottomControlStyle"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/favorite" />
+
+            <ImageView
+                android:id="@+id/playlist"
+                style="@style/BottomControlStyle"
+                android:layout_width="@dimen/bottom_control_dimen"
+                android:layout_height="@dimen/bottom_control_dimen"
+                android:src="@drawable/playlist" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

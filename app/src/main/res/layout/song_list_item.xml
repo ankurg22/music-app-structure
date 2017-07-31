@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="song"
+            type="com.example.android.musilicious.Song" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_width"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/list_content_padding"
+            android:paddingRight="@dimen/list_content_padding">
+
+            <TextView
+                android:id="@+id/number"
+                style="@style/ListItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@{String.valueOf(song.id)}" />
+
+            <TextView
+                android:id="@+id/song_title"
+                style="@style/ListItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="56dp"
+                android:text="@{song.title}" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>
